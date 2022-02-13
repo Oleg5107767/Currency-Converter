@@ -1,0 +1,27 @@
+.head{
+    border: 1px solid #dfe1e5;
+    box-shadow:  2px 5px 1px rgb(64 60 67 / 25%);
+
+
+    margin: 0 auto; 
+    border-radius: 25px;
+}
+.header__span{
+    font-size: large;
+    text-align: center;
+    color: gray;
+ 
+    margin-right: 4px;
+}
+.header__h1{
+    color: white;
+}
+.header__input{
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
