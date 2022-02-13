@@ -24,7 +24,6 @@ const Convector = (props) => {
   }
 
   return (
-
     <div className="container-fluid convector">
       <div className="row">
         <div className="col-5 ">
@@ -41,14 +40,10 @@ const Convector = (props) => {
             </select>
         </div>
         <div className="col-2">
-
             <svg className="convector__image" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"></path>
             </svg>
-
-
         </div>
-
         <div className="col-5">
             <select className="convector__select " id="cur2"
                     onChange={changeSecondCurrency}>
@@ -79,9 +74,7 @@ const Convector = (props) => {
             </input>
         </div>
       </div>
- 
-
-      </div>
+    </div>
 
   )
 }

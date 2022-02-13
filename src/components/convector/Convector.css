@@ -1,6 +1,7 @@
 .convector{
     margin-top: 4rem;
 }
+
 .convector__select{
     border: none;
     width: auto;
@@ -12,6 +13,7 @@
     border-radius: 5px;
     outline: none;
 }
+
 .convector__input{
     outline: none;
     border: 1px solid #dfe1e5;

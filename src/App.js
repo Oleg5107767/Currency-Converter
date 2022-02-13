@@ -4,11 +4,9 @@ import LayOut from './components/layOut/LayOut';
 
 const App = () => {
 
-
-
   return (
     <div className="App">
-      <LayOut></LayOut>
+      <LayOut/>
     </div>
   );
 }
