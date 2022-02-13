@@ -5,14 +5,12 @@ import "./Convector.css";
 
 const Convector = (props) => {
 
-
   const [output, setOutput] = useState(null);
   const [currencyInput, setCurrencyInput] = useState(null);
   const [firstCurrency, setFirstCurrency] = useState({});
   const [secondCurrency, setSecondCurrency] = useState({});
 
   useEffect(() => updateOutput(), [currencyInput, secondCurrency, firstCurrency]);
-
 
   const updateInputValue = (e) => setCurrencyInput(+e.target.value)
   const changeFirstCurrency = (e) => setFirstCurrency(props.currency.filter(el => el.ccy === e.target.value)[0])
@@ -27,12 +25,14 @@ const Convector = (props) => {
     <div className="container-fluid convector">
       <div className="row">
         <div className="col-5 ">
-            <select className="convector__select " id="cur1" 
-                    onChange={changeFirstCurrency}>
+            <select className="convector__select"
+                  id="cur1" 
+                  onChange={changeFirstCurrency}
+                  >
            <option style={{display: 'none'}} selected></option>
               {props.currency.map(el => {
                 return (
-                  <option >
+                  <option>
                     {el.ccy}
                   </option>
                 )
@@ -45,8 +45,10 @@ const Convector = (props) => {
             </svg>
         </div>
         <div className="col-5">
-            <select className="convector__select " id="cur2"
-                    onChange={changeSecondCurrency}>
+            <select className="convector__select "
+                  id="cur2"
+                  onChange={changeSecondCurrency}
+                  >
               <option style={{display: 'none'}} selected></option>
               {props.currency.map(el => {
                 return (
@@ -61,21 +63,20 @@ const Convector = (props) => {
       <div className="row">
         <div className="col-6 p-0">
             <input className="convector__input " 
-                  type="number" 
-                  id="valuta1" 
-                  onChange={updateInputValue}>
+                type="number" 
+                id="valuta1" 
+                onChange={updateInputValue}>
             </input>
         </div>
         <div  className="col-6 p-0">
             <input className="convector__input" 
-                  type="number" 
-                  id="valuta2" 
-                  value={output}>
+                type="number" 
+                id="valuta2" 
+                value={output}>
             </input>
         </div>
       </div>
     </div>
-
   )
 }
 export default Convector;

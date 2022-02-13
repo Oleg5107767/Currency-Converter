@@ -1,7 +1,7 @@
 import "./Header.css";
 
 const Header = (props) => {
-  console.log(props)
+  
   return (
     <div className="container ">
       <nav className="navbar fixed-top navbar-dark bg-dark ">
@@ -26,7 +26,7 @@ const Header = (props) => {
                 </div>
               </div>
             </div>
-            )
+          )
         })}
       </nav>
     </div>

@@ -20,13 +20,14 @@ const LayOut = () => {
       allItems = allItems.filter(el => el.base_ccy === "UAH")
       allItems.map((el) => {
           el.buy = Math.round(el.buy * 100) / 100
-        el.sale = Math.round(el.sale * 100) / 100
+          el.sale = Math.round(el.sale * 100) / 100
       })
       setCurrency( [...allItems])
     });
   }, [])
 
   return (
+    
     <div>
       <Header currency={currency}/>
       <Convector currency={currency}/>
